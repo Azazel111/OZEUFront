@@ -1324,3 +1324,262 @@ legend {
 /* PRODUCTS DETAIL RAITING */
 
 /* PRODUCTS-DETAIL */
+
+/* COMPANY */
+
+/* COMPANY BANNER */
+.company-banner-text {
+    padding-top: 60px;
+    padding-bottom: 240px;
+}
+/* COMPANY BANNER */
+
+/* COMPANY CYCLE */
+.cycle {
+    padding-top: 240px;
+}
+
+.company-main-title {
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 36px;
+    line-height: 21.6px;
+    margin-bottom: 24px;
+}
+
+.cycle-content {
+    padding-top: 80px;
+    display: flex;
+}
+
+.cycle-swiper {
+    position: relative;
+    max-width: 70%;
+    overflow: hidden;
+}
+
+.cycle-swiper-navigation {
+    position: absolute;
+    top: 130px;
+    right: 44px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    z-index: 2;
+}
+
+.cycle-swiper-pagination {
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 18px;
+    line-height: 21.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.cycle-swiper__btn_next, .cycle-swiper__btn_prev {
+    width: 60px;
+}
+
+.cycle-swiper__slide {
+    background: #F4F3F2;
+    padding: 44px 46px;
+}
+
+.cycle-swiper__slide_desc {
+    padding-top: 44px;
+}
+
+.cycle-swiper__slide_images {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.cycle-swiper__slide_images>img {
+    width: 100%;
+}
+
+.cycle-list {
+    margin-left: 121px;
+}
+
+.cycle-list__item {
+    cursor: pointer;
+    color: #767676;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.cycle-list__item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.cycle-list__item--active {
+    position: relative;
+    color: #1C1C1C;
+}
+
+.cycle-list__item--active::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: calc(100%/2 - 2px);
+    left: -14px;
+}
+/* COMPANY CYCLE */
+
+/* COMPANY HISTORY */
+.content-block {
+    padding-top: 240px;
+}
+
+.history-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-swiper {
+    position: relative;
+}
+
+.history-swiper-navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.history-full-arrow {
+    padding-top: 75px;
+}
+
+.history-swiper {
+    overflow: hidden;
+}
+
+.history-swiper-wrapper {
+    padding-top: 44px;
+}
+
+.history-swiper__slide {
+    position: relative;
+}
+
+.history-swiper__slide_desc {
+    padding-top: 44px;
+}
+
+.history-swiper__slide::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1C1C1C;
+    top: -63px;
+    left: 0;
+}
+
+.history-swiper-last {
+    position: absolute;
+    width: 344px;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    opacity: 0.8;
+    z-index: 2;
+}
+/* COMPANY HISTORY */
+
+/* COMPANY SERTIFICATES */
+.sertificates-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.sertificates-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    padding-bottom: 60px;
+}
+
+.sertificates-item {
+    border: 1.5px solid #767676;
+    padding: 24px;
+}
+/* COMPANY SERTIFICATES */
+
+/* COMPANY REWARD */
+.reward-many {
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+}
+
+.reward-content {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 80px;
+}
+
+.reward-swiper {
+    overflow: hidden;
+    max-width: 70%;
+    margin-bottom: 20px;
+    margin-right: 24px;
+}
+
+.reward-slider__item {
+    padding: 60px 24px 24px 24px;
+    background: #F4F3F2;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.reward-slider__item>img {
+    height: 21px;
+    width: 32px;
+}
+/* COMPANY REWARD */
+
+/* COMPANY KIDS */
+.kids {
+    padding-top: 240px;
+}
+
+.kids-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kids-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+}
+/* COMPANY KIDS */
+
+/* COMPANY */

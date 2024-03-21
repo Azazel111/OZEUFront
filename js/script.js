@@ -67,6 +67,8 @@ if (document.querySelector('.news-slider')) {
     });
 }
 
+// SLIDER BANNER PRODUCTS
+
 if (document.querySelector('.swiper_thumbnail')) {
     var swiper_thumbnail = new Swiper(".swiper_thumbnail", {
         slidesPerView: 2,
@@ -83,14 +85,74 @@ if (document.querySelector('.banner-products-detail-swiper')) {
         // pagination: {
         //     el: '.first-banner-slider-pagination',
         // },
-        
+
         // allowSwipeToPrev: false,
         // allowSwipeToNext: false,
-        thumbs: {                    
+        thumbs: {
             swiper: swiper_thumbnail,
-        }, 
+        },
     });
 }
+
+// COMPANY CYCLE SLIDER
+if (document.querySelector('.cycle-swiper')) {
+    const swiper = new Swiper('.cycle-swiper', {
+        slidesPerView: 1,
+        pagination: {
+            el: '.cycle-swiper-pagination',
+            type: 'fraction',
+            clickable: true,
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+            }
+        },
+        navigation: {
+            nextEl: '.cycle-swiper__btn_next',
+            prevEl: '.cycle-swiper__btn_prev',
+        },
+    });
+}
+
+// COMPANY HISTORY SLIDER
+if (document.querySelector('.history-swiper')) {
+    const swiper = new Swiper('.history-swiper', {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        // pagination: {
+        //     el: '.history-swiper-pagination',
+        //     type: 'fraction',
+        //     clickable: true,
+        //     renderFraction: function (currentClass, totalClass) {
+        //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+        //     }
+        // },
+        navigation: {
+            nextEl: '.history-swiper__btn_next',
+            prevEl: '.history-swiper__btn_prev',
+        },
+    });
+}
+
+// COMPANY REWARD SLIDER
+if (document.querySelector('.reward-swiper')) {
+    const swiper = new Swiper('.reward-swiper', {
+        slidesPerView: 4,
+        spaceBetween: 24,
+        // pagination: {
+        //     el: '.history-swiper-pagination',
+        //     type: 'fraction',
+        //     clickable: true,
+        //     renderFraction: function (currentClass, totalClass) {
+        //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+        //     }
+        // },
+        // navigation: {
+        //     nextEl: '.history-swiper__btn_next',
+        //     prevEl: '.history-swiper__btn_prev',
+        // },
+    });
+}
+
 /*POPUP*/
 
 const popupBtn = document.querySelector('.main-cta');
