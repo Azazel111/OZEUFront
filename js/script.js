@@ -29,12 +29,12 @@ if (document.querySelector('.utp')) {
     });
 }
 
-if(document.querySelector('.video-content')) {
+if (document.querySelector('.video-content')) {
     const video = document.querySelector('.video-content');
     const videoPlay = document.querySelector('.video-play');
     let isPlay = false;
-    videoPlay.addEventListener('click', function() {
-        if(isPlay == false) {
+    videoPlay.addEventListener('click', function () {
+        if (isPlay == false) {
             video.play();
             // video.setAttribute('controls');
             video.setAttribute('controls', 'controls');
@@ -66,3 +66,56 @@ if (document.querySelector('.news-slider')) {
         // allowSwipeToNext: false,
     });
 }
+
+if (document.querySelector('.swiper_thumbnail')) {
+    var swiper_thumbnail = new Swiper(".swiper_thumbnail", {
+        slidesPerView: 2,
+        // navigation: {
+        //     nextEl: '.swiper_thumbnail__next',
+        //     prevEl: '.swiper_thumbnail__prev',
+        // },                        
+    })
+}
+
+if (document.querySelector('.banner-products-detail-swiper')) {
+    const swiper = new Swiper('.banner-products-detail-swiper', {
+        slidesPerView: 1,
+        // pagination: {
+        //     el: '.first-banner-slider-pagination',
+        // },
+        
+        // allowSwipeToPrev: false,
+        // allowSwipeToNext: false,
+        thumbs: {                    
+            swiper: swiper_thumbnail,
+        }, 
+    });
+}
+/*POPUP*/
+
+const popupBtn = document.querySelector('.main-cta');
+const popup = document.querySelector('.popup');
+const popupClose = document.querySelector('.popup-close__btn');
+
+popupBtn.addEventListener('click', () => {
+    popup.classList.add('popup--active');
+    document.body.classList.add('stop-scroll');
+})
+
+popupClose.addEventListener('click', () => {
+    popup.classList.remove('popup--active');
+    document.body.classList.remove('stop-scroll');
+});
+
+/* PRODUCTS HIDE BTN */
+
+const hideBtn = document.querySelector('.section-list-top__text');
+const hideBlock = document.getElementById('hidable');
+
+hideBtn.addEventListener('click', () => {
+    if (!hideBlock.classList.contains('hidden')) {
+        hideBlock.classList.add('hidden')
+    } else {
+        hideBlock.classList.remove('hidden')
+    }
+})

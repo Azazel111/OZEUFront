@@ -122,6 +122,10 @@ legend {
     margin: 0 auto;
 }
 
+.container-sm {
+    max-width: 893px;
+}
+
 .h1 {
     font-family: 'Cygre-Regular';
     font-size: 56px;
@@ -902,7 +906,7 @@ legend {
 .products-main-title {
     font-family: 'Cygre-Regular';
     font-size: 28px;
-    line-height: 20.8px;
+    line-height: 36.4px;
     color: #1C1C1C;
 }
 
@@ -995,3 +999,328 @@ legend {
 /* PRODUCTS LIST */
 
 /* PRODUCTS */
+
+/*POPUP*/
+
+.main-cta {
+    position: fixed;
+    bottom: 25px;
+    right: 45px;
+}
+
+.popup {
+    padding-top: 25px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transform: translateX(-200vw);
+    transition: transform .5s ease-in-out;
+}
+
+.popup--active {
+    transform: translateX(0);
+}
+
+.popup-logo {
+    margin-bottom: 80px;
+}
+
+.popup-close__btn {
+    position: absolute;
+    top: 44px;
+    right: 44px;
+    width: 32px;
+    height: 32px;
+}
+
+.popup__close-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1C1C1C;
+}
+
+.popup__close-line:first-child {
+    transform: rotate(45deg);
+}
+
+.popup__close-line:last-child {
+    transform: rotate(-45deg);
+}
+
+/* PRODUCTS-DETAIL */
+/* BREADCRUMPS */
+.breadcrumps {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumps__item:not(:last-child) {
+    margin-right: 28px;
+    position: relative;
+}
+
+.breadcrumps__item::after {
+    content: '';
+    background: #767676;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: calc(100%/2 - 2px);
+    right: -16px;
+}
+
+.breadcrumps__item_link {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
+}
+
+.breadcrumps__item_link--active {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #767676;
+}
+/* BREADCRUMPS */
+
+/* PRODUCTS-DETAIL BANNER */
+.banner-products-detail-slider__item {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-thumbnails-container {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-thumbnails {
+    min-width: 40%;
+}
+
+.swiper-thumbnails-img {
+    max-width: 100px;
+}
+/* PRODUCTS-DETAIL BANNER */
+
+/* TAB BUTTONS */
+.tab-buttons {
+    padding-top: 60px;
+}
+
+.tab-buttons-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.tab-buttons-content::after {
+    content: '';
+    width: 100%;
+    height: 1.5px;
+    background: #E3E3E3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tab-buttons__item {
+    
+}
+
+.tab-buttons__item:not(:last-child) {
+    margin-right: 55px;
+}
+
+.tab-buttons__item>a {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
+}
+
+
+/* TAB BUTTONS */
+
+/* PRODUCTS DERTAIL INFO */
+.products-detail-info {
+    padding-top: 60px;
+}
+
+.products-detail-info-content {
+    padding-top: 44px;
+}
+
+.info-text {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
+    margin-bottom: 24px;
+}
+
+.info-text-ul {
+    list-style: disc;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
+    margin-bottom: 16px;
+}
+
+.info-text-li {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.info-text-li::after {
+    content: '';
+    position: absolute;
+    background: #1C1C1C;
+    width: 1px;
+    height: 1px;
+    top: calc(100%/2);
+    left: 15px;
+}
+/* PRODUCTS DETAIL INFO */
+
+/* PRODUCTS DETAIL DOCUMENTS */
+.document-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.document-list__item {
+    border: 1.5px solid #ACACAC;
+    padding: 24px;
+}
+/* PRODUCTS DETAIL DOCUMENTS */
+
+/* PRODUCTS DETAIL TABLE */
+.products-detail-table {
+    width: 100%;
+}
+
+.products-detail-tr:not(:last-child) {
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.products-detail-tr>th {
+    padding: 16px 24px;
+    background: #767676;
+    max-width: calc(100%/2 - 2px);
+    text-align: start;
+    color: #FEFEFE;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.products-detail-tr>th:first-child {
+    background: #494949;
+}
+
+.products-detail-tr>td {
+    padding: 16px 24px;
+    max-width: calc(100%/2 - 2px);
+    text-align: start;
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.products-detail-tr>td {
+    padding: 16px 24px;
+    max-width: calc(100%/2 - 2px);
+    text-align: start;
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.products-detail-link {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+}
+/* PRODUCTS DETAIL TABLE */
+
+/* PRODUCTS DETAIL RAITING */
+.raiting {
+    padding-top: 240px;
+}
+
+.raiting-content {
+    width: 100%;
+    padding-top: 80px;
+    display: flex;
+    gap: 24px;
+    /* flex-wrap: wrap; */
+}
+
+.raiting-content__item_first {
+    background: #F4F3F2;
+    padding: 44px 24px;
+    display: flex;
+    /* max-width: 664px; */
+}
+
+.raiting-content__item {
+    background: #F4F3F2;
+    padding: 44px 24px;
+    display: flex;
+    max-width: 300px;
+}
+
+.raiting-content__item_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.raiting-content__item_textfirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.raiting-list {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.raiting-content-title {
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-bottom: 24px;
+}
+/* PRODUCTS DETAIL RAITING */
+
+/* PRODUCTS-DETAIL */
