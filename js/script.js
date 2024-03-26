@@ -20,11 +20,11 @@ if (document.querySelector('.first-banner-swiper')) {
 // SLIDER UTP
 if (document.querySelector('.utp')) {
     const utp = new Swiper('.utp', {
+        speed: 4000,
         loop: true,
         autoplay: {
             dalay: 2000,
         },
-        // freeMode: true,
         slidesPerView: 4,
     });
 }
@@ -133,31 +133,50 @@ if (document.querySelector('.history-swiper')) {
     });
 }
 
-// // COMPANY REWARD SLIDER
-// if (document.querySelector('.reward-swiper')) {
-//     const swiper = new Swiper('.reward-swiper', {
-//         slidesPerView: 4,
-//         spaceBetween: 24,
-//         // pagination: {
-//         //     el: '.history-swiper-pagination',
-//         //     type: 'fraction',
-//         //     clickable: true,
-//         //     renderFraction: function (currentClass, totalClass) {
-//         //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
-//         //     }
-//         // },
-//         // navigation: {
-//         //     nextEl: '.history-swiper__btn_next',
-//         //     prevEl: '.history-swiper__btn_prev',
-//         // },
-//     });
-// }
+// COMPANY VACANSIES SLIDER
+if (document.querySelector('.vacansies-slider')) {
+    const swiper = new Swiper('.vacansies-slider', {
+        slidesPerView: 2,
+        spaceBetween: 24,
+        // pagination: {
+        //     el: '.history-swiper-pagination',
+        //     type: 'fraction',
+        //     clickable: true,
+        //     renderFraction: function (currentClass, totalClass) {
+        //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+        //     }
+        // },
+        // navigation: {
+        //     nextEl: '.history-swiper__btn_next',
+        //     prevEl: '.history-swiper__btn_prev',
+        // },
+    });
+}
 
 // COMPANY SERTIFICATES SLIDER
 if (document.querySelector('.sertificates-list')) {
     const swiper = new Swiper('.sertificates-list', {
         slidesPerView: 4,
         spaceBetween: 24,
+        // pagination: {
+        //     el: '.history-swiper-pagination',
+        //     type: 'fraction',
+        //     clickable: true,
+        //     renderFraction: function (currentClass, totalClass) {
+        //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+        //     }
+        // },
+        // navigation: {
+        //     nextEl: '.history-swiper__btn_next',
+        //     prevEl: '.history-swiper__btn_prev',
+        // },
+    });
+}
+
+// COMPANY LICENSES SLIDER
+if (document.querySelector('.licenses-modal-slider')) {
+    const swiper = new Swiper('.licenses-modal-slider', {
+        slidesPerView: 1,
         // pagination: {
         //     el: '.history-swiper-pagination',
         //     type: 'fraction',
@@ -191,13 +210,33 @@ popupClose.addEventListener('click', () => {
 
 /* PRODUCTS HIDE BTN */
 
-const hideBtn = document.querySelector('.section-list-top__text');
-const hideBlock = document.getElementById('hidable');
+if (document.querySelector('.section-list-top__text')) {
+    const hideBtn = document.querySelector('.section-list-top__text');
+    const hideBlock = document.getElementById('hidable');
 
-hideBtn.addEventListener('click', () => {
-    if (!hideBlock.classList.contains('hidden')) {
-        hideBlock.classList.add('hidden')
-    } else {
-        hideBlock.classList.remove('hidden')
-    }
-})
+    hideBtn.addEventListener('click', () => {
+        if (!hideBlock.classList.contains('hidden')) {
+            hideBlock.classList.add('hidden')
+        } else {
+            hideBlock.classList.remove('hidden')
+        }
+    })
+}
+
+// LICENSES MODAL
+if (document.querySelector('.licenses-modal')) {
+    const modal = document.querySelector('.licenses-modal');
+    const modalActiveButtons = document.querySelectorAll('.licenses-list__item');
+    const modalCloseButton = document.querySelector('.licenses-modal__close');
+    const hiddenClass = "licenses-modal--active";
+
+    modalActiveButtons.forEach(element => {
+        element.addEventListener('click', function () {
+            console.log(element + " click");
+            modal.classList.add(hiddenClass);
+        });
+    });
+    modalCloseButton.addEventListener('click', function() {
+        modal.classList.remove(hiddenClass);
+    })
+}

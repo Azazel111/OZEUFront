@@ -129,6 +129,16 @@ legend {
 .h1 {
     font-family: 'Cygre-Regular';
     font-size: 56px;
+    font-weight: 500;
+    line-height:57.2px;
+}
+
+.h1-white {
+    color: #fff;
+    font-family: 'Cygre-Regular';
+    font-size: 56px;
+    font-weight: 500;
+    line-height:57.2px;
 }
 
 .many-link {
@@ -164,6 +174,14 @@ legend {
     display: flex;
     align-items: center;
     color: #1C1C1C;
+}
+
+.logo {
+    max-height: 36px;
+}
+
+.logo>img {
+    height: 100%;
 }
 /* GLOBAL */
 
@@ -248,7 +266,7 @@ legend {
     transition: width 0.2s ease-in-out;
 }
 
-.header-link-group:hover::after {
+/* .header-link-group:hover::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -256,7 +274,7 @@ legend {
     left: 0;
     bottom: -3px;
     background: #494949;
-}
+} */
 
 .header-dropdown-list__item>a {
     transition: color 0.2s ease-in-out;
@@ -291,6 +309,10 @@ legend {
 
 .header-contacts__item:not(:last-child) {
     margin-bottom: 16px;
+}
+
+.color-white {
+    color: #fff;
 }
 /* HEADER */
 
@@ -721,6 +743,7 @@ legend {
 .form-content {
     display: flex;
     align-items: flex-start;
+    padding-top: 80px;
 }
 
 .form-column {
@@ -732,7 +755,7 @@ legend {
     font-size: 28px;
     line-height: 36.4px;
     color: #1C1C1C;
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .form-column__link {
@@ -881,6 +904,32 @@ legend {
     line-height: 20.8px;
     color: #fff;
 
+}
+
+.form-content-contacts {
+    padding-top: 60px;
+}
+
+.form-content-contacts__text {
+    font-family: 'Cygre-Regular';
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 500;
+    color: #1C1C1C;
+}
+
+.form-content-contacts__text_grey {
+    font-family: 'Cygre-Regular';
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 500;
+    color: #767676;
+}
+
+.form-content-contacts__list {
+    padding-top: 44px;
+    width: 100%;
+    border-spacing: 0px 24px;
 }
 /* FORM */
 
@@ -1349,9 +1398,31 @@ legend {
 /* COMPANY */
 
 /* COMPANY BANNER */
+.company-banner {
+    background-size: cover;
+}
 .company-banner-text {
     padding-top: 60px;
     padding-bottom: 240px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-banner-text-items {
+    width: 70%;
+}
+
+.company-banner-text__item {
+    color: #1C1C1C;
+    font-family: 'Cygre-Regular';
+    font-size: 18px;
+    line-height: 21.6px;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.company-banner-text__item>span {
+    color: #2C9EAE;
 }
 /* COMPANY BANNER */
 
@@ -1712,6 +1783,7 @@ legend {
     align-items: center;
     gap: 24px;
     color: #1C1C1C;
+    padding-right: 24px;
 }
 
 .news-detail-page-text__desc>span {
@@ -1742,6 +1814,7 @@ legend {
 }
 
 .news-detail-page-text {
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1751,4 +1824,192 @@ legend {
     display: flex;
     align-items: flex-start;
 }
+
+.news-detail-page-text-content {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.news-detail-page-img {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.news-detail-page-img-desc {
+    padding-top: 24px;
+    color: #767676;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    font-family: 'Cygre-Regular';
+    display: flex;
+    align-items: center;
+}
+
+.news-detail-page-img-desc>img {
+    margin-right: 24px;
+}
 /* NEWS DETAIl PAGE */
+
+/* VACANSIES */
+.vacansies-banner {
+    height: 608px;
+}
+
+.vacansies-banner-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vacansies-banner-sections__item {
+    padding: 10px;
+    background: #F4F3F2;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.4px;
+    font-family: 'Cygre-Regular';
+
+}
+
+/* VACANSIES SLIDER */
+.vacansies-pagination {
+    padding-left: 8px;
+    color: #767676;
+    font-size: 28px;
+    line-height: 36.4px;
+    font-family: 'Cygre-Regular';
+}
+
+.vacansies-top {
+    display: flex;
+    align-items: flex-end;
+}
+
+.vacansies-slider {
+    overflow: hidden;
+    padding-top: 44px;
+}
+
+.vacansies-slider__item {
+    background: #F4F3F2;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vacansies-slider__item_info {
+    color: #767676;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: 'Cygre-Regular';
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 24px;
+}
+
+.vacansies-slider-sections {
+    padding-top: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.vacansies-slider-sections__item {
+    border: 1.5px solid #ACACAC;
+    padding: 10px;
+    color: #1C1C1C;
+    font-size: 12px;
+    line-height: 14.4px;
+    font-weight: 500;
+    font-family: 'Cygre-Regular';
+    text-transform: uppercase;
+}
+/* VACANSIES SLIDER */
+/* VACANSIES */
+
+
+/* LICENSES */
+.licenses-content {
+    padding-top: 60px;
+}
+
+.licenses-list {
+    padding-top: 44px;
+}
+
+.licenses-list__item {
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 500;
+    font-family: 'Cygre-Regular';
+}
+
+.licenses-list__item>img {
+    margin-right: 20px;
+}
+
+.licenses-list__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.licenses-modal {
+    transform: translate(5000px);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 77px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.licenses-modal--active {
+    transform: translate(0px);
+}
+
+.licenses-modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.licenses-modal-slider {
+    overflow: hidden;
+    z-index: 110;
+    width: 35%;
+    height: 70%;
+}
+
+.licenses-modal__img {
+    height: 100%;
+}
+
+.licenses-modal__close {
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    right: 33%;
+    width: 40px;
+    height: 40px;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 130;
+}
+/* LICENSES */
