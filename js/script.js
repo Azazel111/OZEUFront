@@ -20,11 +20,11 @@ if (document.querySelector('.first-banner-swiper')) {
 // SLIDER UTP
 if (document.querySelector('.utp')) {
     const utp = new Swiper('.utp', {
+        speed: 4000,
         loop: true,
         autoplay: {
-            dalay: 2000,
+            delay: 0,
         },
-        // freeMode: true,
         slidesPerView: 4,
     });
 }
