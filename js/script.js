@@ -23,7 +23,7 @@ if (document.querySelector('.utp')) {
         speed: 4000,
         loop: true,
         autoplay: {
-            dalay: 2000,
+            delay: 0,
         },
         slidesPerView: 4,
     });
