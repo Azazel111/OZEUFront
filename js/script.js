@@ -133,9 +133,29 @@ if (document.querySelector('.history-swiper')) {
     });
 }
 
-// COMPANY REWARD SLIDER
-if (document.querySelector('.reward-swiper')) {
-    const swiper = new Swiper('.reward-swiper', {
+// // COMPANY REWARD SLIDER
+// if (document.querySelector('.reward-swiper')) {
+//     const swiper = new Swiper('.reward-swiper', {
+//         slidesPerView: 4,
+//         spaceBetween: 24,
+//         // pagination: {
+//         //     el: '.history-swiper-pagination',
+//         //     type: 'fraction',
+//         //     clickable: true,
+//         //     renderFraction: function (currentClass, totalClass) {
+//         //         return '<span class="' + currentClass + '"></span>' + ' / ' + '<span class="' + totalClass + '"></span>';
+//         //     }
+//         // },
+//         // navigation: {
+//         //     nextEl: '.history-swiper__btn_next',
+//         //     prevEl: '.history-swiper__btn_prev',
+//         // },
+//     });
+// }
+
+// COMPANY SERTIFICATES SLIDER
+if (document.querySelector('.sertificates-list')) {
+    const swiper = new Swiper('.sertificates-list', {
         slidesPerView: 4,
         spaceBetween: 24,
         // pagination: {

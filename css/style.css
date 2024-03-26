@@ -136,7 +136,7 @@ legend {
     position: relative;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #1C1C1C;
 }
 
 .many-link::after {
@@ -1524,21 +1524,25 @@ legend {
 /* COMPANY SERTIFICATES */
 .sertificates-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding-top: 80px;
 }
 
 .sertificates-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-    padding-bottom: 60px;
+    max-width: 70%;
+    overflow: hidden;
+    margin-bottom: 33px;
+    margin-right: 24px;
 }
 
 .sertificates-item {
-    border: 1.5px solid #767676;
-    padding: 24px;
+    padding: 60px 24px 24px 24px;
+    background: #F4F3F2;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 /* COMPANY SERTIFICATES */
 
@@ -1556,30 +1560,35 @@ legend {
 
 .reward-content {
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     padding-top: 80px;
 }
 
-.reward-swiper {
-    overflow: hidden;
-    max-width: 70%;
-    margin-bottom: 20px;
+.reward-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 60px;
     margin-right: 24px;
 }
 
 .reward-slider__item {
-    padding: 60px 24px 24px 24px;
+    position: relative;
+    padding: 64px 24px;
     background: #F4F3F2;
-    height: 280px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 
 .reward-slider__item>img {
-    height: 21px;
-    width: 32px;
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    height: 20px;
+    width: 20px;
 }
 /* COMPANY REWARD */
 
@@ -1604,3 +1613,142 @@ legend {
 /* COMPANY KIDS */
 
 /* COMPANY */
+
+/* NEWS PAGE */
+.news-page {
+    padding-top: 80px;
+}
+
+.news-page-content {
+    display: flex;
+}
+
+.news-page-nav-list {
+    width: 20%;
+}
+
+.news-page-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-page-content__item {
+    padding: 24px;
+    width: 100%;
+    gap: 24px;
+    background: #F4F3F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-page-content__item>img  {
+    max-width: 283px;
+}
+
+.news-page-content__item:not(:last-child) {
+    margin-bottom: 44px;
+}
+/* NEWS PAGE */
+
+/* PAGGINATION */
+.pagination {
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.pagination-content {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination__prev {
+    cursor: pointer;
+    margin-right: 44px;
+    transform: rotate(180deg);
+}
+
+.pagination__next {
+    cursor: pointer;
+    margin-left: 44px;
+}
+
+.pagination-content__item {
+    cursor: pointer;
+    background: #F4F3F2;
+    width: 36px;
+    /* padding: 8px 15.5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Cygre-Regular';
+}
+
+.pagination-content__item_more {
+    cursor: pointer;
+    width: 36px;
+    height: 24px;
+    /* padding: 8px 15px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Cygre-Regular';
+}
+/* PAGGINATION */
+
+/* NEWS DETAIl PAGE */
+.news-detail-page-text__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    font-family: 'Cygre-Regular';
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #1C1C1C;
+}
+
+.news-detail-page-text__desc>span {
+    color: #2C9EAE;
+}
+
+.many-link-prev {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    font-family: 'Cygre-Regular';
+    color: #1C1C1C;
+}
+
+.many-link-prev>img {
+    transform: rotate(90deg);
+}
+
+.many-link-prev::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: #494949;
+}
+
+.news-detail-page-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-detail-page-content {
+    display: flex;
+    align-items: flex-start;
+}
+/* NEWS DETAIl PAGE */
