@@ -176,12 +176,8 @@ legend {
     color: #1C1C1C;
 }
 
-.logo {
-    max-height: 36px;
-}
-
 .logo>img {
-    height: 100%;
+    max-width: 112px;
 }
 /* GLOBAL */
 
@@ -411,6 +407,12 @@ legend {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer-socail {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 /* FOOTER */
 
@@ -2013,3 +2015,65 @@ legend {
     z-index: 130;
 }
 /* LICENSES */
+
+/* PARTNERS PAGE */
+.partners-page {
+    padding-top: 80px;
+}
+
+.partners-banner-content__desc {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 500;
+    font-family: 'Cygre-Regular';
+    color: #1C1C1C;
+    max-width: 45%;
+}
+
+.partners-page-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+}
+
+.partners-page-list__item {
+    cursor: pointer;
+    max-width: 435px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* PARTNERS PAGE REVIEWS */
+.partners-reviews {
+    padding-top: 240px;
+}
+
+.partners-reviews-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partners-reviews-slider-navigate__prev, .partners-reviews-slider-navigate__next {
+    cursor: pointer;
+}
+
+.partners-reviews-slider-navigate__prev {
+    transform: rotate(180deg);
+    margin-right: 24px;
+}
+
+.partners-reviews-slider {
+    padding-top: 80px;
+    overflow: hidden;
+    max-width: 55%;
+}
+
+.partners-reviews-slider__item {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+/* PARTNERS PAGE REVIEWS */
+/* PARTNERS PAGE */
