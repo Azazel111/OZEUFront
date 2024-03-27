@@ -288,6 +288,25 @@ legend {
 .search {
     margin-right: 24px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search:hover {
+    fill: #767676;
+}
+
+.search--active {
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-form {
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+    
 }
 
 .header-contacts {
