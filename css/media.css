@@ -11,9 +11,9 @@
 
     .h1 {
         font-family: 'Cygre-Regular';
-        font-size: 56px;
+        font-size: 28px;
         font-weight: 500;
-        line-height: 57.2px;
+        line-height: 30.8px;
     }
 
     .h1-white {
@@ -48,8 +48,8 @@
 
     .main-title {
         font-family: 'Cygre-Regular';
-        font-size: 52px;
-        line-height: 57.2px;
+        font-size: 26px;
+        line-height: 28.6px;
     }
 
     .tab-link {
@@ -184,6 +184,14 @@
         padding-top: 120px;
     }
 
+    .footer-desktop {
+        display: none;
+    }
+    
+    .footer-mobile {
+        display: block;
+    }
+
     .footer-top {
         border-top: 1.5px solid #FAFAFA;
         display: flex;
@@ -192,33 +200,31 @@
     }
 
     .footer-top-nav {
-        /* width: 80%; */
-        display: flex;
-        justify-content: space-between;
-        /* gap: 40px; */
-        list-style: none;
+        padding-top: 44px;
+        flex-direction: column;
     }
 
     .footer-top__desc {
-        font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
-        color: #767676;
-        margin-top: 20px;
+        font-size: 12px;
+        line-height: 14.4px;
+
+        margin-bottom: 20px;
     }
 
     .footer-link-group {
-        padding-left: 56px;
-        max-width: 336px;
-        min-width: 143px;
+        margin-bottom: 21px;
+        padding-left: 0;
     }
 
     .footer-link-group__item {
         font-family: 'Cygre-Regular';
-        font-size: 18px;
-        line-height: 21.6px;
+        font-size: 14px;
+        line-height: 18.2px;
         color: #1C1C1C;
-        margin-bottom: 16px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
     }
 
     .footer-link-group__item_contacts {
@@ -244,6 +250,7 @@
         /* max-width: 336px; */
         margin-top: 24px;
         list-style: disc;
+        display: none;
     }
 
     .footer-dropdown-list__item {
@@ -288,19 +295,53 @@
     /* HOMEPAGE */
 
     /* FIRST-BANNER */
+    .swiper-info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .swiper-info__img {
         cursor: pointer;
         display: block;
+        margin-right: 20px;
     }
 
     .swiper-info__desc {
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        top: -100%;
-        max-width: 171px;
+        top: 130%;
+        right: 0;
+        /* max-width: 171px; */
         background: #fff;
         padding: 16px;
+        font-size: 14px;
+        line-height: 18.2px;
+        z-index: 200;
+        box-shadow: 0 0 10px #20202013;
+        max-width: 200px;
+    }
+
+    .swiper-info__desc::after {
+        content: '';
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        z-index: 10;
+        border: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        margin-left: -10px;
+        right: 22px;
+        border-bottom: 10px solid #fff;
+        top: -10px;
+    }
+
+    .swiper-info:hover>.swiper-info__desc {
+        opacity: 1;
+        visibility: visible;
     }
 
     .first-banner-slider__item {
@@ -324,12 +365,16 @@
     }
 
     .first-banner-swiper {
-        
+        max-width: 80%;
+        /* display: flex;
+        flex-direction: column-reverse; */
     }
 
     .first-banner-slider-pagination {
-        top: 75vw !important;
-        left: 5wv !important;
+        flex-direction: row;
+        top: 55vw !important;
+        /* left: 8vw !important; */
+        left: 0 !important;
     }
 
     .swiper-pagination-bullet:not(:last-child) {
@@ -352,6 +397,8 @@
 
     .first-banner-content {
         position: relative;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .pagination__item--active {
@@ -455,14 +502,14 @@
     .utp-item__text {
         color: #000;
         font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
+        font-size: 14px;
+        line-height: 18.2px;
     }
 
     .utp-item__text>span {
         font-family: 'Cygre-Regular';
-        font-size: 52px;
-        line-height: 57.2px;
+        font-size: 40px;
+        line-height: 44px;
     }
 
     /* UTP */
@@ -470,6 +517,7 @@
     /* VIDEO */
     .video-container {
         position: relative;
+        padding: 0;
     }
 
     .video-content {
@@ -511,7 +559,7 @@
         font-family: 'Cygre-Regular';
         font-size: 18px;
         line-height: 21.6px;
-        max-width: 45%;
+        max-width: 100%;
     }
 
     .partners-content {
@@ -527,7 +575,7 @@
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
         gap: 60px;
-        width: 40%;
+        width: 100%;
         margin-bottom: 60px;
     }
 
@@ -536,33 +584,25 @@
     /* MAP-PROJECTS */
     .map-projects {
         padding-top: 240px;
-    }
-
-    .map-projects-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
 
     /* MAP-PROJECTS */
 
     /* NEWS */
     .news {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .news-content {
-        padding-top: 80px;
+        padding-top: 60px;
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: stretch;
     }
 
     .news-slider {
-        max-width: 75%;
-        overflow: hidden;
-    }
-
-    .news-slider-wrapper {
+        max-width: 100%;
         overflow: hidden;
     }
 
@@ -587,47 +627,39 @@
     }
 
     .news-many {
-        font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
-        color: #1C1C1C;
-        text-align: end;
-        margin-bottom: 47px;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
     }
 
     /* NEWS */
 
     /* FORM */
     .form {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .form-content {
         display: flex;
         align-items: flex-start;
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     .form-column {
-        width: calc(100%/2);
+        display: none;
+    }
+
+    .form-mobile {
+        display: block;
     }
 
     .form-column__text {
-        font-family: 'Cygre-Regular';
-        font-size: 28px;
-        line-height: 36.4px;
-        color: #1C1C1C;
-        /* margin-top: 80px; */
+        font-size: 20px;
+        line-height: 22px;
     }
 
     .form-column__link {
-        font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
-        color: #1C1C1C;
-        display: flex;
-        align-items: center;
-        margin-top: 48px;
+        margin-top: 20px;
     }
 
     .form-column__link>img {
@@ -756,7 +788,7 @@
     }
 
     .form-button {
-        max-width: 246px;
+        max-width: none;
         width: 100%;
         padding: 22px 0;
         background: #16545D;
@@ -839,8 +871,8 @@
 
     .products-main-title {
         font-family: 'Cygre-Regular';
-        font-size: 28px;
-        line-height: 36.4px;
+        font-size: 26px;
+        line-height: 28.6px;
         color: #1C1C1C;
     }
 
@@ -939,6 +971,8 @@
     /*POPUP*/
 
     .main-cta {
+        width: 60px;
+        height: 60px;
         position: fixed;
         bottom: 25px;
         right: 45px;
@@ -1960,4 +1994,11 @@
 
     /* PARTNERS PAGE REVIEWS */
     /* PARTNERS PAGE */
+}
+
+@media (max-width:600px) {
+    .first-banner-slider-pagination {
+        top: 65vw !important;
+        /* left: 5vw !important; */
+    }
 }

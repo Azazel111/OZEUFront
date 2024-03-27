@@ -55,6 +55,17 @@ if (document.querySelector('.news-slider')) {
         slidesPerView: 3,
         loop: true,
         spaceBetween: 24,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            320:{
+                slidesPerView: 2,
+            },
+            768:{
+                slidesPerView: 3,
+            },
+        }
         // pagination: {
         //     el: '.first-banner-slider-pagination',
         // },
