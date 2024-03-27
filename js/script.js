@@ -375,3 +375,56 @@ if (document.getElementById('kidsList')) {
     renderList()
 };
 
+// SEARCH
+
+if(document.querySelector('.search')) {
+    const search = document.querySelector('.search');
+    const searchForm = document.querySelector('.search-form');
+    const nav = document.querySelector('.nav');
+    const headerContacts = document.querySelector('.header-contacts');
+    const searchClose = document.querySelector('.search-form-group__close');
+
+    // searchForm.preventDefault();
+    search.addEventListener('click', function() {
+        searchForm.classList.add('search--active');
+        nav.style.display = 'none';
+        headerContacts.style.display = 'none';
+    });
+
+    searchClose.addEventListener('click', function () {
+        searchForm.classList.remove('search--active');
+        nav.style.display = 'flex';
+        headerContacts.style.display = 'flex';
+    });
+}
+
+// HEADER MOBILE
+if(document.querySelector('.header-burger')) {
+    const headerBurger = document.querySelector('.header-burger');
+    const headerMobule = document.querySelector('.nav');
+
+    headerBurger.addEventListener('click', function() {
+        headerMobule.classList.toggle('nav-active');
+        // body.style.position = 'static';
+    });
+}
+function listActive(listButtons, listWindows, hiddenClass) {
+    listButtons.forEach((button) => function() {
+        button.addEventListener('click', function(el) {
+            el.preventDefault();
+            if(Array.isArray(listWindows)) {
+                listWindows[index].classList.toggle(hiddenClass);
+            } else {
+                listWindows.classList.toggle(hiddenClass);
+            }
+        });
+    });
+}
+
+// HEADER LINK DROPDOWN
+if(document.querySelector('.header-dropdown-list')) {
+    const dropList = document.querySelectorAll('.header-dropdown-list');
+    const links = document.querySelectorAll('.header-link-group__item');
+    const className = "header-dropdown-list--active";
+    listActive(links, dropList, className);
+}

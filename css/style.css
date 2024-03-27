@@ -262,6 +262,10 @@ legend {
     transition: width 0.2s ease-in-out;
 }
 
+.header-burger {
+    display: none;
+}
+
 /* .header-link-group:hover::after {
     content: '';
     position: absolute;
@@ -296,17 +300,38 @@ legend {
     fill: #767676;
 }
 
+.search-form {
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    padding-left: 24px;
+    transition: width 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+    /* transition: visibility 0.3s ease-in-out; */
+}
+
 .search--active {
-    width: 50%;
+    width: 100%;
     opacity: 1;
     visibility: visible;
 }
 
-.search-form {
-    width: 50%;
-    opacity: 1;
-    visibility: visible;
-    
+.search-form__submit {
+    height: 50px;
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 182px;
+}
+
+.search-form-group {
+    display: flex;
+    align-items: center;
 }
 
 .header-contacts {
@@ -445,11 +470,19 @@ legend {
 }
 
 .swiper-info {
+    width: 100%;
+    position: relative;
+}
+
+.swiper-info__desc {
     font-family: 'Cygre-Regular';
     color: #ACACAC;
-    width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+
+.swiper-info__img {
+    display: none;
 }
 
 .first-banner-slider__item {
@@ -534,15 +567,21 @@ legend {
 .swiper-slide-img__active {
     display: block;
     height: 598px;
+    transition: opacity .3s ease-in-out;
 }
 
 .swiper-slide-img__hover {
-    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
     height: 598px;
+    transition: opacity .3s ease-in-out;
 }
 
 .swiper-slide-img:hover .swiper-slide-img__hover {
-    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
 }
 
 .swiper-slide-img:hover .swiper-slide-img__active {
@@ -1108,7 +1147,7 @@ legend {
     width: 100%;
     height: 100vh;
     background-color: #fff;
-    transform: translateX(-200vw);
+    transform: translateX(-300vw);
     transition: transform .5s ease-in-out;
 }
 
