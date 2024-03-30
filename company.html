@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/normolize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>О компании</title>
 </head>
 
@@ -57,18 +57,28 @@
                 <div class="header-left">
                     <div class="search">
                         <img src="img/search.svg" alt="" />
+                        <form class="search-form" action="">
+                            <div class="search-form-group form-input">
+                                <input placeholder="Введите запрос..." type="text">
+                                <button class="search-form-group__close">✖</button>
+                            </div>
+                            <button class="search-form__submit">Поиск</button>
+                        </form>
                     </div>
                     <div class="header-contacts">
                         <a class="header-contacts__item" href="tel:+73513073363">+7 (351) 307-33-63</a>
                         <a class="header-contacts__item" href="email:Sales@ozeu.ru">Sales@ozeu.ru</a>
                     </div>
                 </div>
+                <div class="header-burger">
+                    <img src="/img/Menu.svg" alt="">
+                </div>
             </div>
         </div>
     </header>
     <main class="main">
         <section class="company-banner">
-            <div class="container">
+            <div class="container company-banner-container">
                 <h1 class="h1">О компании</h1>
                 <div class="company-banner-content">
                     <img src="/img/company-banner.png" alt="">
@@ -134,7 +144,7 @@
             </div>
         </section>
         <section class="cycle">
-            <div class="container">
+            <div class="container desctop">
                 <h2 class="main-title">Производственный цикл</h2>
                 <div class="cycle-content">
                     <div class="cycle-swiper">
@@ -187,6 +197,81 @@
                     </ul>
                 </div>
             </div>
+            <div class="container mobile">
+                <h2 class="main-title">Производственный цикл</h2>
+                <div class="cycle-content-mobile">
+                    <div class="cycle-list-mobile">
+                        <div class="cycle-list-mobile__item">
+                            <div class="cycle-list-mobile__item_top" data-path="one">
+                                <div class="products-main-title">Проектирование</div>
+                                <div class="plus">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="cycle-list-mobile__item_content" data-target="one">
+                                <p class="info-text cycle-swiper__slide_desc">Разработка проектной, сметной и
+                                    конструкторской документации для энергетического оборудования в блочно-модульном
+                                    исполнении, а также электрощитового оборудования до 1кВ и 10кВ.</p>
+                                <div class="cycle-swiper__slide_images">
+                                    <img src="/img/cycle-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cycle-list-mobile__item">
+                            <div class="cycle-list-mobile__item_top" data-path="2">
+                                <div class="products-main-title">Проектирование</div>
+                                <div class="plus">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="cycle-list-mobile__item_content" data-target="2">
+                                <p class="info-text cycle-swiper__slide_desc">Разработка проектной, сметной и
+                                    конструкторской документации для энергетического оборудования в блочно-модульном
+                                    исполнении, а также электрощитового оборудования до 1кВ и 10кВ.</p>
+                                <div class="cycle-swiper__slide_images">
+                                    <img src="/img/cycle-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cycle-list-mobile__item">
+                            <div class="cycle-list-mobile__item_top" data-path="3">
+                                <div class="products-main-title">Проектирование</div>
+                                <div class="plus">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="cycle-list-mobile__item_content" data-target="3">
+                                <p class="info-text cycle-swiper__slide_desc">Разработка проектной, сметной и
+                                    конструкторской документации для энергетического оборудования в блочно-модульном
+                                    исполнении, а также электрощитового оборудования до 1кВ и 10кВ.</p>
+                                <div class="cycle-swiper__slide_images">
+                                    <img src="/img/cycle-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cycle-list-mobile__item">
+                            <div class="cycle-list-mobile__item_top" data-path="4">
+                                <div class="products-main-title">Проектирование</div>
+                                <div class="plus">
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="cycle-list-mobile__item_content" data-target="4">
+                                <p class="info-text cycle-swiper__slide_desc">Разработка проектной, сметной и
+                                    конструкторской документации для энергетического оборудования в блочно-модульном
+                                    исполнении, а также электрощитового оборудования до 1кВ и 10кВ.</p>
+                                <div class="cycle-swiper__slide_images">
+                                    <img src="/img/cycle-img.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="partners">
             <div class="container">
@@ -224,11 +309,91 @@
             </div>
         </section>
         <section class="map-projects">
-            <div class="container">
+            <div class="container desctop">
                 <h2 class="main-title">География проектов</h2>
                 <div class="map-projects-content">
                     <div class="map">
                         <img src="/img/map.svg" alt="">
+                    </div>
+                    <a class="many-link" href="">Смотреть всех проектов <img src="img/Arrow.png" alt=""></a>
+                </div>
+            </div>
+            <div class="container mobile">
+                <h2 class="main-title">Реализованные проекты в 2023 г.</h2>
+                <div class="map-projects-content-mobile">
+                    <div class="map-projects-content-mobile__item">
+                        <div class="map-projects-content-mobile__item_top" data-path="1">
+                            <img src="/img/Gazprom.svg" alt="">
+                            <div class="map-projects-content-mobile__item_text">
+                                <div class="partners-title">Блок-контейнер АСУТП <img src="/img/Arrow.png" alt=""></div>
+                                <p class="info-text">Арктик СПГ 2</p>
+                                <p class="info-text">Москва</p>
+                            </div>
+                        </div>
+                        <div class="map-projects-content-mobile__item_bottom" data-target="1">
+                            <p class="info-text">Качество и надежность продукции подтверждаются испытаниями,
+                                сертификатами соответствия Госстандарта России и многочисленными дипломами
+                                специализированных выставок, как российских, так и международных.</p>
+                            <div class="map-projects-content-mobile-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-projects-content-mobile__item">
+                        <div class="map-projects-content-mobile__item_top" data-path="2">
+                            <img src="/img/Gazprom.svg" alt="">
+                            <div class="map-projects-content-mobile__item_text">
+                                <div class="partners-title">Блок-контейнер АСУТП <img src="/img/Arrow.png" alt=""></div>
+                                <p class="info-text">Арктик СПГ 2</p>
+                                <p class="info-text">Москва</p>
+                            </div>
+                        </div>
+                        <div class="map-projects-content-mobile__item_bottom" data-target="2">
+                            <p class="info-text">Качество и надежность продукции подтверждаются испытаниями,
+                                сертификатами соответствия Госстандарта России и многочисленными дипломами
+                                специализированных выставок, как российских, так и международных.</p>
+                            <div class="map-projects-content-mobile-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="/img/production-kipia.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <a class="many-link" href="">Смотреть всех проектов <img src="img/Arrow.png" alt=""></a>
                 </div>
@@ -239,16 +404,20 @@
                 <div class="history-top">
                     <h2 class="main-title">История</h2>
                     <div class="history-swiper-navigation">
-                        <button class="history-swiper__btn_prev"><img src="/img/prevArrow.svg" alt=""></button>
-                        <div class="history-swiper-pagination">2005 — 2009 / 2024</div>
-                        <button class="history-swiper__btn_next"><img src="/img/nextArrow.svg" alt=""></button>
+                        <div class="history-swiper-pagination mobile">2005 / 2024</div>
+                        <div>
+                            <button class="history-swiper__btn_prev"><img src="/img/prevArrow.svg" alt=""></button>
+                            <div class="history-swiper-pagination desctop">2005 — 2009 / 2024</div>
+                            <button class="history-swiper__btn_next"><img src="/img/nextArrow.svg" alt=""></button>
+                        </div>
                     </div>
                 </div>
                 <div class="history-swiper">
+                    <p class="history-bottom-text mobile">Отправная точка</p>
                     <div class="history-full-arrow">
                         <img src="/img/fullArrow.svg" alt="">
                     </div>
-                    <div class="history-swiper-last"></div>
+                    <div class="history-swiper-last desctop"></div>
                     <div class="swiper-wrapper history-swiper-wrapper">
                         <div class="swiper-slide history-swiper__slide">
                             <div class="main-title">2005</div>
@@ -314,7 +483,7 @@
                     </div>
                     <a href="" class="reward-many">
                         <img src="img/Long arrow.svg" alt="">
-                        Смотреть все награды
+                        Смотреть все лицензии и сертификаты 
                     </a>
                 </div>
             </div>
@@ -349,16 +518,18 @@
             <div class="container kids-container">
                 <img src="/img/kidsImg.png" alt="">
                 <div class="kids-text">
-                    <p class="info-text">"Дети ОЗЭУ" – это сердце благотворительной деятельности "Озёрского завода
+                    <p class="info-text desctop">"Дети ОЗЭУ" – это сердце благотворительной деятельности "Озёрского завода
                         энергоустановок". Каждый месяц компания направляет средства на лечение тяжелобольных детей,
                         обеспечивая адресную помощь маленьким пациентам. </p>
-                    <a class="many-link" href="">Смотреть подробности <img src="img/Arrow.png" alt=""></a>
+                    <a class="many-link desctop" href="">Смотреть подробности <img src="img/Arrow.png" alt=""></a>
+                    <p class="info-text mobile"> Каждый месяц компания направляет средства на лечение тяжелобольных детей, обеспечивая адресную помощь маленьким пациентам. </p>
+                    <a class="many-link mobile" href="">Дети ОЗЭУ<img src="img/Arrow.png" alt=""></a>
                 </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-desktop">
             <div class="footer-top">
                 <div class="logo">
                     <img src="/img/footerLogo.svg" alt="" />
@@ -460,6 +631,115 @@
                         <img src="/img/footerVK.svg" alt="" />
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="container footer-mobile">
+            <p class="footer-top__desc">
+                ООО «Озерский завод <br />энергоустановок» (ОЗЭУ)
+            </p>
+            <p class="footer-top__desc">
+                ©2005-2024
+            </p>
+            <div class="footer-socail">
+                <a href="">
+                    <img src="/img/socalial1.png" alt="" />
+                </a>
+                <a href="">
+                    <img src="/img/socalial2.png" alt="" />
+                </a>
+                <a href="">
+                    <img src="/img/socalial3.png" alt="" />
+                </a>
+                <a href="">
+                    <img src="/img/socalial4.png" alt="" />
+                </a>
+            </div>
+            <p class="footer-top__desc">
+                Проектирование, производство и поставка энергетического оборудования
+            </p>
+            <ul class="footer-dropdown-list">
+                <li class="footer-link-group__item_contacts">
+                    <img src="/img/email.svg" alt="">
+                    <a href="tel:+73513073363">+7 (351) 307-33-63</a>
+                </li>
+                <li class="footer-link-group__item_contacts">
+                    <img src="/img/phone.svg" alt="">
+                    <a href="email:sales@ozeu.ru">sales@ozeu.ru</a>
+                </li>
+            </ul>
+            <ul class="footer-top-nav">
+                <li class="footer-link-group">
+                    <a class="footer-link-group__item" href="">О компания<img src="/img/Arrow.png" alt=""></a>
+                    <ul class="footer-dropdown-list">
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Партнеры ОЗЭУ и отзывы <br />
+                                о продукции
+                            </a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Новости компании</a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Проект «ДЕТИ ОЗЭУ»</a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Вакансии</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-link-group">
+                    <a class="footer-link-group__item" href="">
+                        Продукция
+                        <img class="footer-link-group__arrow" src="/img/Arrow.png" alt="">
+                    </a>
+                    <ul class="footer-dropdown-list">
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Блочно-модульное оборудование</a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Электрооборудование классанапряжения до 1000 В (или 1
+                                кВ)</a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Электрооборудование классанапряжения до 10 000 В (или 10
+                                кВ)</a>
+                        </li>
+                        <li class="footer-dropdown-list__item">
+                            <a href="">Оборудование для электрохимической защиты трубопроводов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-link-group">
+                    <a class="footer-link-group__item" href="">Проекты</a>
+                    <ul class="footer-dropdown-list">
+                        <li class="footer-link-group__item"><a href="">Новости</a></li>
+                        <li class="footer-link-group__item">
+                            <a href="">Лицензии и сертификаты</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-link-group">
+                    <a class="footer-link-group__item" href="">Контакты</a>
+                    <ul class="footer-dropdown-list">
+                        <li class="footer-link-group__item">
+                            <a href="">Секретарь ОЗЭУ</a>
+                        </li>
+                        <li class="footer-link-group__item_contacts">
+                            <a href="tel:+73513073363">+7 (351) 307-33-63</a>
+                        </li>
+                        <li class="footer-link-group__item_contacts">
+                            <a href="email:sales@ozeu.ru">sales@ozeu.ru</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-socail-mobile">
+                <a href="">
+                    <img src="/img/footerYOU.svg" alt="" />
+                </a>
+                <a href="">
+                    <img src="/img/footerVK.svg" alt="" />
+                </a>
             </div>
         </div>
     </footer>

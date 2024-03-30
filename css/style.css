@@ -131,6 +131,14 @@ legend {
     max-width: 893px;
 }
 
+.desctop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
 .h1 {
     font-family: 'Cygre-Regular';
     font-size: 56px;
@@ -765,6 +773,63 @@ legend {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.map-projects-content-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.map-projects-content-mobile__item {
+    width: 100%;
+    background: #F4F3F2;
+    padding: 20px;
+}
+
+.map-projects-content-mobile__item_top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.map-projects-content-mobile__item_top .partners-title img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.map-projects-content-mobile__item_top--active .partners-title img {
+    transform: rotate(180deg);
+}
+
+.map-projects-content-mobile__item_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.map-projects-content-mobile__item_text>.partners-title {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.map-projects-content-mobile-slider {
+    overflow: hidden;
+}
+
+.map-projects-content-mobile__item_bottom {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.map-projects-content-mobile__item_bottom--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
 }
 /* MAP-PROJECTS */
 
@@ -1622,6 +1687,69 @@ legend {
     top: calc(100%/2 - 2px);
     left: -14px;
 }
+
+.cycle-content-mobile {
+    padding-top: 60px;
+}
+
+.cycle-list-mobile__item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.cycle-list-mobile__item_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid #E3E3E3;
+    padding: 21px 0;
+}
+
+.cycle-list-mobile__item_content {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cycle-list-mobile__item_content--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 20px 24px;
+}
+
+.cycle-list-mobile__item_top--active {
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+    padding: 20px 24px;
+}
+
+.plus {
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+
+.plus>span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: calc(100%/2 - 1px);
+    background: #1C1C1C;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plus span:first-child {
+    transform: rotate(90deg);
+}
+
+.plus--active span:first-child {
+    transform: rotate(0deg);
+}
 /* COMPANY CYCLE */
 
 /* COMPANY HISTORY */
@@ -1635,6 +1763,14 @@ legend {
     justify-content: space-between;
 }
 
+.history-bottom-text {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #767676;
+    padding-top: 44px;
+}
+
 .history-swiper {
     position: relative;
 }
@@ -1643,6 +1779,13 @@ legend {
     display: flex;
     align-items: center;
     gap: 24px;
+}
+
+.history-swiper-pagination {
+    font-family: 'Cygre-Regular';
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #1C1C1C;
 }
 
 .history-full-arrow {

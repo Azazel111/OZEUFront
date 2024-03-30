@@ -552,14 +552,21 @@
 
     /* PARTNERS */
     .partners {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .partners-title {
-        font-family: 'Cygre-Regular';
-        font-size: 18px;
-        line-height: 21.6px;
+        font-size: 16px;
+        line-height: 19.2px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
         max-width: 100%;
+    }
+
+    .partners-title>img {
+        width: 16px;
+        height: 16px;
     }
 
     .partners-content {
@@ -574,7 +581,7 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
-        gap: 60px;
+        gap: 36px;
         width: 100%;
         margin-bottom: 60px;
     }
@@ -583,8 +590,7 @@
 
     /* MAP-PROJECTS */
     .map-projects {
-        padding-top: 240px;
-        display: none;
+        padding-top: 200px;
     }
 
     /* MAP-PROJECTS */
@@ -871,8 +877,8 @@
 
     .products-main-title {
         font-family: 'Cygre-Regular';
-        font-size: 26px;
-        line-height: 28.6px;
+        font-size: 20px;
+        line-height: 22px;
         color: #1C1C1C;
     }
 
@@ -1135,7 +1141,8 @@
         font-size: 16px;
         line-height: 20.8px;
         color: #1C1C1C;
-        margin-bottom: 24px;
+        margin-bottom: 12px;
+        font-weight: 400;
     }
 
     .info-text-ul {
@@ -1302,28 +1309,26 @@
     /* COMPANY */
 
     /* COMPANY BANNER */
-    .company-banner {
-        background-size: cover;
+    .company-banner-container {
+        padding: 0;
     }
 
     .company-banner-text {
-        padding-top: 60px;
-        padding-bottom: 240px;
-        display: flex;
-        justify-content: space-between;
+        padding-top: 44px;
+        padding-bottom: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
     }
 
     .company-banner-text-items {
-        width: 70%;
+        width: 100%;
     }
 
     .company-banner-text__item {
-        color: #1C1C1C;
-        font-family: 'Cygre-Regular';
-        font-size: 18px;
-        line-height: 21.6px;
-        margin-bottom: 24px;
-        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 20px;
     }
 
     .company-banner-text__item>span {
@@ -1333,170 +1338,54 @@
     /* COMPANY BANNER */
 
     /* COMPANY CYCLE */
+
     .cycle {
-        padding-top: 240px;
+        padding-top: 200px;
     }
-
-    .company-main-title {
-        color: #1C1C1C;
-        font-family: 'Cygre-Regular';
-        font-size: 36px;
-        line-height: 21.6px;
-        margin-bottom: 24px;
-    }
-
-    .cycle-content {
-        padding-top: 80px;
-        display: flex;
-    }
-
-    .cycle-swiper {
-        position: relative;
-        max-width: 70%;
-        overflow: hidden;
-    }
-
-    .cycle-swiper-navigation {
-        position: absolute;
-        top: 130px;
-        right: 44px;
-        display: flex;
-        align-items: center;
-        gap: 24px;
-        z-index: 2;
-    }
-
-    .cycle-swiper-pagination {
-        color: #1C1C1C;
-        font-family: 'Cygre-Regular';
-        font-size: 18px;
-        line-height: 21.8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-    }
-
-    .cycle-swiper__btn_next,
-    .cycle-swiper__btn_prev {
-        width: 60px;
-    }
-
-    .cycle-swiper__slide {
-        background: #F4F3F2;
-        padding: 44px 46px;
-    }
-
-    .cycle-swiper__slide_desc {
-        padding-top: 44px;
-    }
-
     .cycle-swiper__slide_images {
-        width: 100%;
-        padding-top: 100px;
-    }
-
-    .cycle-swiper__slide_images>img {
-        width: 100%;
+        padding-top: 0;
     }
 
     .cycle-list {
-        margin-left: 121px;
-    }
-
-    .cycle-list__item {
-        cursor: pointer;
-        color: #767676;
-        font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-    }
-
-    .cycle-list__item:not(:last-child) {
-        margin-bottom: 16px;
-    }
-
-    .cycle-list__item--active {
-        position: relative;
-        color: #1C1C1C;
-    }
-
-    .cycle-list__item--active::after {
-        content: '';
-        position: absolute;
-        width: 4px;
-        height: 4px;
-        border-radius: 50%;
-        top: calc(100%/2 - 2px);
-        left: -14px;
+        display: none;
     }
 
     /* COMPANY CYCLE */
 
     /* COMPANY HISTORY */
     .content-block {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .history-top {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
         justify-content: space-between;
     }
 
-    .history-swiper {
-        position: relative;
-    }
-
     .history-swiper-navigation {
-        display: flex;
+        padding-top: 60px;
+        width: 100%;
         align-items: center;
-        gap: 24px;
+        justify-content: space-between;
+        gap: 0px;
     }
 
     .history-full-arrow {
-        padding-top: 75px;
-    }
-
-    .history-swiper {
-        overflow: hidden;
+        padding-top: 16px;
     }
 
     .history-swiper-wrapper {
         padding-top: 44px;
     }
 
-    .history-swiper__slide {
-        position: relative;
-    }
-
     .history-swiper__slide_desc {
-        padding-top: 44px;
+        padding-top: 20px;
     }
 
     .history-swiper__slide::after {
-        content: '';
-        position: absolute;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: #1C1C1C;
-        top: -63px;
-        left: 0;
-    }
-
-    .history-swiper-last {
-        position: absolute;
-        width: 344px;
-        height: 70%;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        opacity: 0.8;
-        z-index: 2;
+        top: -65px;
     }
 
     /* COMPANY HISTORY */
@@ -1504,58 +1393,47 @@
     /* COMPANY SERTIFICATES */
     .sertificates-content {
         display: flex;
-        align-items: flex-end;
-        padding-top: 80px;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 60px;
     }
 
     .sertificates-list {
-        max-width: 70%;
-        overflow: hidden;
+        max-width: 100%;
         margin-bottom: 33px;
-        margin-right: 24px;
+        margin-right: 0;
     }
 
     .sertificates-item {
-        padding: 60px 24px 24px 24px;
-        background: #F4F3F2;
-        height: 280px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        height: 259px;
     }
 
     /* COMPANY SERTIFICATES */
 
     /* COMPANY REWARD */
     .reward-many {
-        color: #1C1C1C;
-        font-family: 'Cygre-Regular';
-        font-size: 16px;
-        line-height: 20.8px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 9px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .reward-many>img {
+        width: 100%;
     }
 
     .reward-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     .reward-list {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-bottom: 60px;
-        margin-right: 24px;
+        gap: 20px;
+        margin-bottom: 44px;
+        margin-right: 0;
+        padding: 0 20px;
     }
 
     .reward-slider__item {
+        width: 100%;
         position: relative;
         padding: 64px 24px;
         background: #F4F3F2;
@@ -1576,7 +1454,7 @@
 
     /* COMPANY KIDS */
     .kids {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .kids-container {
@@ -1932,6 +1810,7 @@
     /* LICENSES */
 
     /* PARTNERS PAGE */
+
     .partners-page {
         padding-top: 80px;
     }
@@ -1992,6 +1871,13 @@
         gap: 44px;
     }
 
+    .desctop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
     /* PARTNERS PAGE REVIEWS */
     /* PARTNERS PAGE */
 }
@@ -2001,4 +1887,5 @@
         top: 65vw !important;
         /* left: 5vw !important; */
     }
+
 }
